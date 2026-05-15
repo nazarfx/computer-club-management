@@ -18,13 +18,13 @@ public class ReservaceController {
 
     @GetMapping
     public List<Reservace> getMyReservations() {
-        // Пока что будем считать, что ты — это пользователь с ID 1
+
         return repository.findAllByIdZakaznik(1);
     }
 
     @PostMapping
     public Reservace createReservation(@RequestBody Reservace reservace) {
-        // Здесь можно будет добавить проверку времени
+
         return repository.save(reservace);
     }
 }

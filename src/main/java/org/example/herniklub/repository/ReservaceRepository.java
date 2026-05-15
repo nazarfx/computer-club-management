@@ -8,6 +8,6 @@ import java.util.List;
 
 @Repository
 public interface ReservaceRepository extends JpaRepository<Reservace, Integer> {
-    // Используем правильное имя поля из Java
+
     List<Reservace> findAllByIdZakaznik(Integer idZakaznik);
 }

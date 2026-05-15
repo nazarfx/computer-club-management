@@ -24,13 +24,13 @@ public class StaniceController {
 
 @PatchMapping("/{id}/reserve")
 @Transactional
-@CrossOrigin(origins = "*") // Чтобы WebStorm мог достучаться
+@CrossOrigin(origins = "*")
     public HerniStanice reserveStation(@PathVariable Integer id) {
         HerniStanice station = repository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Station not found"));
 
-        station.setStav("OBSAZENO"); // Меняем статус
-        return repository.save(station); // Сохраняем в Oracle
+        station.setStav("OBSAZENO");
+        return repository.save(station);
     }
 
     @PatchMapping("/{id}/cancel")
@@ -39,7 +39,7 @@ public class StaniceController {
         HerniStanice station = repository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Station not found"));
 
-        station.setStav("VOLNO"); // Возвращаем статус, который разрешен базой
+        station.setStav("VOLNO");
         return repository.save(station);
     }
 }
