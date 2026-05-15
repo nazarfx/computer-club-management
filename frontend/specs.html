@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC&Cenik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">NEO<span style="color:var(--accent)">NIX</span></div>
+            <div class="nav-links">
+                <a href="index.html">Domů</a>
+                <a href="specs.html" style="color:var(--accent)">PC & Ceník</a>
+                <a href="events.html">Turnaje</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="Profil.html">Profil</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="container section-padding">
+        <h2>Detailní specifikace</h2>
+
+        <div class="table-wrapper">
+            <table class="tech-table">
+                <thead>
+                <tr>
+                    <th>Komponenta</th>
+                    <th>Standard PC</th>
+                    <th>VIP PC</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Ceník</td>
+                    <td>90 Kč</td>
+                    <td>150 Kč</td>
+                </tr>
+                <tr>
+                    <td>Procesor</td>
+                    <td>Intel Core i5</td>
+                    <td>Intel Core i9</td>
+                </tr>
+                <tr>
+                    <td>Grafika</td>
+                    <td>RTX 3070</td>
+                    <td>RTX 4090</td>
+                </tr>
+                <tr>
+                    <td>RAM</td>
+                    <td>16 GB</td>
+                    <td>64 GB</td>
+                </tr>
+                <tr>
+                    <td>Monitor</td>
+                    <td>144 Hz</td>
+                    <td>360 Hz</td>
+                </tr>
+                <tr>
+                    <td>Internet</td>
+                    <td>1 Gbps</td>
+                    <td>1 Gbps</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div> </section>
+
+    <section class="container section-padding">
+        <div class="table-wrapper">
+        </div>
+    </section>
+
+    <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">AKTUÁLNÍ STAV STANIC</h2>
+
+    <div id="stations-container" class="grid-wrapper">
+        <p style="text-align: center;">Načítání dat ze serveru...</p>
+    </div>
+</main>
+
+
+
+
+<script src="api.js"></script>
+
+</body>
+</html>

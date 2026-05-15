@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | NEONIX</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">NEO<span style="color:var(--accent)">NIX</span></div>
+            <div class="nav-links">
+                <a href="index.html">Domů</a>
+                <a href="specs.html">PC & Ceník</a>
+                <a href="events.html">Turnaje</a>
+                <a href="contact.html" style="color:var(--accent)">Kontakt</a>
+                <a href="Profil.html">Profil</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="container section-padding">
+        <h2>Kontaktujte nás</h2>
+
+        <div class="grid-wrapper" style="margin-top: 30px;">
+
+            <div class="card">
+                <h3>Adresa & Otevírací doba</h3>
+                <p style="margin-bottom: 20px;">
+                    <strong>NEONIX Pardubice</strong><br>
+                    Masarykovo náměstí 123<br>
+                    530 02 Pardubice
+                </p>
+                <p style="margin-bottom: 20px;">
+                    📞 +420 123 456 789<br>
+                    📧 info@neonix.cz
+                </p>
+
+                <div style="border-top: 1px solid #333; padding-top: 10px;">
+                    <p style="display: flex; justify-content: space-between;"><span>Po - Čt:</span> <span>10:00 - 22:00</span></p>
+                    <p style="display: flex; justify-content: space-between;"><span>Pá - So:</span> <span>10:00 - 04:00</span></p>
+                    <p style="display: flex; justify-content: space-between;"><span>Ne:</span> <span>12:00 - 22:00</span></p>
+                </div>
+            </div>
+            <div class="card">-->
+                <h3>Napište nám</h3>
+                <form action="#" style="display: flex; flex-direction: column; gap: 15px;">
+                    <input type="text" placeholder="Vaše Jméno" class="form-input">
+                    <input type="email" placeholder="Váš Email" class="form-input">
+                    <select class="form-input">
+                        <option>Rezervace PC</option>
+                        <option>Dotaz k turnaji</option>
+                        <option>Jiné</option>
+                    </select>
+                    <textarea rows="4" placeholder="Zpráva..." class="form-input"></textarea>
+
+                    <button type="submit" class="btn" style="width: 100%;">ODESLAT</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <div style="width: 100%; height: 350px; background-color: #222; display: flex; align-items: center; justify-content: center; border-top: 1px solid #333; margin-top: auto;">
+        <p style="color: #555;">[ ZDE BUDE MAPA (Google Maps Embed) ]</p>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 NEONIX. Semestrální projekt.</p>
+    </div>
+</footer>
+
+<script src="api.js"></script>
+
+</body>
+</html>

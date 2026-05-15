@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnaje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">NEO<span style="color:var(--accent)">NIX</span></div>
+            <div class="nav-links">
+                <a href="index.html">Domů</a>
+                <a href="specs.html">PC & Ceník</a>
+                <a href="events.html" style="color:var(--accent)">Turnaje</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="Profil.html">Profil</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+<main>
+    <section class="container section-padding">
+        <h2>Nadcházející turnaje</h2>
+        <p>Ukaž skill a vyhraj prize pool.</p>
+    </section>
+
+    <section class="container section-padding">
+        <div class="card" style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 20px;">
+            <div style="border-bottom: 1px solid #333; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="margin: 0; color: var(--accent);">CS2: Night Cup</h3>
+                <span style="background: #333; padding: 5px 10px; border-radius: 4px;">12. Leden</span>
+            </div>
+            <p>Klasický 5v5 turnaj. Double elimination bracket. Vstup: 200 Kč na tým.</p>
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <div><strong>Prize Pool:</strong> 5.000 Kč</div>
+                <a href="#" class="btn" style="margin-left: auto;">Registrovat</a>
+            </div>
+        </div>
+
+        <div class="card" style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 20px;">
+            <div style="border-bottom: 1px solid #333; padding-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+                <h3 style="margin: 0; color: #ff0055;">League of Legends 1v1</h3>
+                <span style="background: #333; padding: 5px 10px; border-radius: 4px;">18. Leden</span>
+            </div>
+            <p>Solo turnaj na Howling Abyss. First blood nebo 100 CS vyhrává.</p>
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <div><strong>Prize Pool:</strong> Skiny v hodnotě 2.000 Kč</div>
+                <a href="#" class="btn" style="margin-left: auto;">Registrovat</a>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 50px;">Minulé výsledky</h3>
+        <ul style="list-style: none; padding: 20px; background: var(--bg-card); border-radius: 8px;">
+            <li style="padding: 10px 0; border-bottom: 1px solid #333;">🏆 <strong>Valorant Cup:</strong> Tým "Headshot" (Výhra 3.000 Kč)</li>
+            <li style="padding: 10px 0; border-bottom: 1px solid #333;">🏆 <strong>FIFA 24:</strong> Martin K. (Výhra 1.000 Kč)</li>
+            <li style="padding: 10px 0;">🏆 <strong>Dota 2:</strong> Tým "Pudge" (Výhra 5.000 Kč)</li>
+        </ul>
+    </section>
+</main>
+
+
+<script src="api.js"></script>
+
+</body>
+</html>
