@@ -1,6 +1,5 @@
 const API_URL = 'http://localhost:8080/api/stations';
 
-// Функция загрузки данных
 async function fetchStations() {
     const container = document.getElementById('stations-container');
     if (!container) return;
@@ -13,12 +12,12 @@ async function fetchStations() {
         stations.forEach(station => {
             const isAvailable = station.stav === 'VOLNO';
 
-            // Если станция занята, показываем кнопку отмены, если свободна — кнопку брони
+
             const buttonHtml = isAvailable
                 ? `<button class="btn" onclick="reserveStation(${station.idStanice})">REZERVOVAT</button>`
                 : `<button class="btn" style="background: #ff4444;" onclick="cancelReservation(${station.idStanice})">ZRUŠIT REZERVACI</button>`;
 
-            // Внутри функции fetchStations, там где создается stationCard:
+
             const stationCard = `
     <article class="card">
         <h3>STANICE #${station.cisloStanice}</h3>
@@ -55,7 +54,6 @@ async function fetchStations() {
     }
 }
 
-// Функция отправки запроса на бронирование
 async function reserveStation(id) {
     if (!confirm('Opravdu chcete rezervovat tuto stanici?')) return;
 
@@ -66,7 +64,7 @@ async function reserveStation(id) {
 
         if (response.ok) {
             alert('Stanice byla úspěšně rezervována!');
-            fetchStations(); // Перерисовываем список с новым статусом
+            fetchStations();
         } else {
             alert('Chyba při rezervaci. Zkuste to znovu.');
         }
@@ -106,7 +104,7 @@ async function makeTimedReservation(id) {
         idStanice: id,
         casOd: startInput,
         casDo: endInput,
-        idZakaznik: 1, // Твой ID, по которому мы потом будем фильтровать в профиле
+        idZakaznik: 1,
         stavRezervace: "POTVRZENO"
     };
 
@@ -121,7 +119,7 @@ async function makeTimedReservation(id) {
 
         if (response.ok) {
             alert('Rezervace byla úspěšně vytvořena!');
-            fetchStations(); // Обновляем данные
+            fetchStations();
         } else {
             alert('Chyba při vytváření rezervace на сервере.');
         }
@@ -131,5 +129,5 @@ async function makeTimedReservation(id) {
     }
 }
 
-// Запуск при загрузке страницы
+
 fetchStations();

@@ -9,7 +9,7 @@ async function loadReservations() {
             return;
         }
 
-        // Выводим последние брони сверху
+
         container.innerHTML = data.reverse().map(res => `
             <div class="card">
                 <h3>PC #${res.idStanice}</h3>
